@@ -354,7 +354,7 @@ input[type=submit] {
   display: grid;
   grid-template-areas:
     'whofor whofor whofor whofor whofor whofor'
-    'whoforlist whoforlist whoforlist whoforlist whoforlist whoforlist';
+    '. whoforlist whoforlist whoforlist whoforlist .';
 }
 
 .aboutg {
