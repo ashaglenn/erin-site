@@ -51,13 +51,13 @@ ol {
 }
 
 .purposeg{
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .purposeg {
   display: grid;
   grid-template-areas:
-		'purpose purpose purpose purpose purpose purpose'
-		'left left middle middle right right';
+		'purpose purpose purpose purpose purpose'
+		'. left middle right .';
 }
 
 .whoforg{
@@ -215,7 +215,7 @@ input[type=submit] {
   background-position: center;
 	min-height: 500px;
 	justify-content: center;
-	align-items: center;
+	align-items: top;
 	Justify-items: center;
 	padding-bottom: 100px;
 	padding-top: 100px;
@@ -248,10 +248,13 @@ input[type=submit] {
 .middle,
 .right {
 	font-size: 1.5em;
-	width: 45%;
+	width: 80%;
 	font-family: 'Poppins', sans-serif;
   font-weight: 500;
+  background-color: rgb(255,255,255, 0.4);
 }
+
+
 
 .whoforg{
   grid-area: whoforg;
