@@ -46,6 +46,7 @@ ol {
     'aside aside aside aside aside aside'
     'purposeg purposeg purposeg purposeg purposeg purposeg'
     'whoforg whoforg whoforg whoforg whoforg whoforg'
+    'reviewsg reviewsg reviewsg reviewsg reviewsg reviewsg'
     'aboutg aboutg aboutg aboutg aboutg aboutg'
     'footer footer footer footer footer footer';
 }
@@ -99,6 +100,16 @@ ol {
 	'a1 a1 a1 a3 a3 a3';
 }
 
+.reviewsg{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.reviewsg {
+  display: grid;
+  grid-template-areas:
+		'review review review'
+		'review1 review2 review3';
+}
+
 
 .header {
   grid-area: header;
@@ -130,8 +141,6 @@ ol {
   padding-bottom: 20px;
 }
 
-
-
 .hero{
   grid-area: hero;
   text-align: center;
@@ -144,10 +153,10 @@ ol {
 }
 
 .hero h1 {
-  font-size: 4.25em;
-  font-family: Lora;
+  font-size: 5.25em;
+  font-family: 'Dancing Script', cursive;
+;
 	grid-area: h1;
-
 }
 
 .hero h2{
@@ -165,7 +174,6 @@ ol {
 	min-height: 200px;
   justify-items: center;
 }
-
 
 .aside #a1{
 	grid-area: a1;
@@ -205,7 +213,6 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
-
 
 .purposeg{
   grid-area: purposeg;
@@ -252,9 +259,8 @@ input[type=submit] {
 	font-family: 'Poppins', sans-serif;
   font-weight: 500;
   background-color: rgb(255,255,255, 0.4);
+  padding: 10px;
 }
-
-
 
 .whoforg{
   grid-area: whoforg;
@@ -262,7 +268,8 @@ input[type=submit] {
 	background-image: url(img/hero2.jpg);
   min-height: 500px;
   justify-content: center;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
+  padding-top: 40px;
   background-size: cover;
   background-position: center;
   align-content: center;
@@ -282,13 +289,54 @@ input[type=submit] {
 	font-size: 1.6em;
 	padding-bottom: 40px;
   background-color: rgb(249,170,180, 0.3);
-
 }
 
-.fontawesome-icons{
+#people{
 	font-size: 4em;
   color: grey;
+}
 
+.reviewsg{
+  grid-area: reviewsg;
+	text-align: center;
+	background-image: url(img/purpose.jpg);
+  background-size: cover;
+  background-position: center;
+	min-height: 500px;
+	justify-content: center;
+	align-items: top;
+	Justify-items: center;
+	padding-bottom: 100px;
+	padding-top: 60px;
+	}
+
+.review{
+  grid-area: review;
+  font-size: 1.50em;
+  font-family: Lora;
+	padding-top: 20px;
+}
+
+.review1 {
+  grid-area: review1;
+}
+
+.review2 {
+  grid-area: review2;
+}
+
+.review3 {
+  grid-area: review3;
+}
+
+.review1,
+.review2,
+.review3 {
+	font-size: 1em;
+	width: 90%;
+  font-family: 'Delius', cursive;
+  background-color: rgb(255,255,255, 0.4);
+  padding: 20px;
 }
 
 .aboutg{
@@ -339,6 +387,7 @@ input[type=submit] {
     'aside aside aside aside aside aside'
     'purposeg purposeg purposeg purposeg purposeg purposeg'
     'whoforg whoforg whoforg whoforg whoforg whoforg'
+    'revieswg reviewsg reviewsg reviewsg reviewsg reviewsg'
     'aboutg aboutg aboutg aboutg aboutg aboutg'
     'footer footer footer footer footer footer';
    }
@@ -358,6 +407,15 @@ input[type=submit] {
   grid-template-areas:
     'whofor whofor whofor whofor whofor whofor'
     '. whoforlist whoforlist whoforlist whoforlist .';
+}
+
+.reviewsg {
+display: grid;
+grid-template-areas:
+  'review review review review review review'
+  'review1 review1 review1 review1 review1 review1'
+  'review2 review2 review2 review2 review2 review2'
+  'review3 review3 review3 review3 review3 review3';
 }
 
 .aboutg {
