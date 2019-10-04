@@ -52,13 +52,13 @@ ol {
 }
 
 .purposeg{
-  grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .purposeg {
   display: grid;
   grid-template-areas:
-		'purpose purpose purpose purpose purpose purpose purpose'
-		'. left . middle . right .';
+		'purpose purpose purpose'
+		'left middle right';
 }
 
 .whoforg{
@@ -226,6 +226,7 @@ input[type=submit] {
 	Justify-items: center;
 	padding-bottom: 100px;
 	padding-top: 100px;
+  width:100%
 	}
 
 .purpose{
@@ -273,6 +274,7 @@ input[type=submit] {
   background-size: cover;
   background-position: center;
   align-content: center;
+  width: 100%;
 }
 
 .whofor{
@@ -308,6 +310,7 @@ input[type=submit] {
 	Justify-items: center;
 	padding-bottom: 100px;
 	padding-top: 60px;
+  width: 100%;
 	}
 
 .review{
@@ -387,7 +390,7 @@ input[type=submit] {
     'aside aside aside aside aside aside'
     'purposeg purposeg purposeg purposeg purposeg purposeg'
     'whoforg whoforg whoforg whoforg whoforg whoforg'
-    'revieswg reviewsg reviewsg reviewsg reviewsg reviewsg'
+    'reviewsg reviewsg reviewsg reviewsg reviewsg reviewsg'
     'aboutg aboutg aboutg aboutg aboutg aboutg'
     'footer footer footer footer footer footer';
    }
